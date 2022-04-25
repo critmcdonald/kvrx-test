@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "fileId": "1I-W53YeYBhx1du5H5zxQk381582aV-R5WmMtVLjX2CM",
+      "type": "sheet",
+      "name": "artists"
+    },
+    {
+      "fileId": "1rpsqkjPfE5IgUw6s-ajQUbLrL9Ohpwhwhd45Qjwd-rk",
+      "type": "sheet",
+      "name": "genres"
+    },
+    {
+      "fileId": "1orfZFLa4aiZKR_6CRVmBfw_RGb64izMtNYN7k9BAUB4",
+      "type": "sheet",
+      "name": "songs"
+    }
+  ],
+  "to_bake": [
+    {
+      "template": "artists",
+      "data": "artists",
+      "array": "artists",
+      "slug": "slug",
+      "path": "artist"
+    },
+    {
+      "template": "genres",
+      "data": "genres",
+      "array": "genres",
+      "slug": "slug",
+      "path": "genre"
+    }
+  ]
+}

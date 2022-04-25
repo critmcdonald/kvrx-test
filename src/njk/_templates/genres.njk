@@ -1,0 +1,34 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}Genres{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+
+
+
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="../img/{{ slug }}.jpeg" alt="" class="img-fluid mb-4">
+      </div>
+      <div class="col-sm-8">
+          <h1>{{ genre }}</h1>
+           {% for item in artists.artists %}
+           {% if item.genre == genre %}
+           <a href="{{ relative_path }}artist/{{ item.slug }}.html">{{ item.artist }}</a><br>
+           {% endif %}
+        {% endfor %}<br>
+      </div>
+    </div>
+  </article>
+
+
+
+
+
+
+{% endblock %}
